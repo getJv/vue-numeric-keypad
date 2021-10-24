@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.jm-pad-btn {
+  @apply col-span-2 h-12 flex justify-center items-center;
+  @apply bg-white  active:bg-gray-500;
+  @apply text-xl font-bold active:text-gray-50 hover:text-gray-500;
+  @apply hover:ring-2  active:ring-0 hover:ring-gray-400;
+  @apply border rounded-sm border-gray-200 active:border-0;
+  @apply cursor-pointer select-none shadow;
+}
+
+.jm-pad-btn.jm-btn-large {
+  @apply col-span-4;
+}
+
+.jm-pad-btn.jm-btn-small {
+  @apply col-span-1;
+}
+
+.jm-pad-output {
+  @apply col-span-6 h-20 flex justify-start items-center;
+  @apply bg-white;
+  @apply text-3xl font-semibold;
+  @apply border rounded-sm border-gray-200;
+  @apply pl-3 truncate;
+}
