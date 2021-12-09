@@ -1,29 +1,23 @@
-# vue-numeric-keypad
+# getjv-num-pad
 
-## Project setup
-```
-yarn install
-```
+> A simple and responsible numeric pad that uses clicks and number keys for Vue.js 3.0
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Installation
 
-### Compiles and minifies for production
-```
-yarn build
+**Supports only Vue 3.0**
+
+```bash
+npm install getjv-num-pad
+# or
+yarn add getjv-num-pad
 ```
 
-### Run your unit tests
-```
-yarn test:unit
+## Usage with Composition API
+
+```js
+// TODO
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## License
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[MIT](http://opensource.org/licenses/MIT)

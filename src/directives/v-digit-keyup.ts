@@ -4,23 +4,7 @@ import { Directive } from 'vue';
 const directive: Directive = {
   beforeMount(el, binding) {
     el._keyupCallback = (event: any) => {
-      const allowedDigits = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '0',
-        'Backspace',
-        'Delete',
-      ];
-      if (allowedDigits.includes(event.key)) {
-        binding.value(event);
-      }
+      binding.value(event);
     };
     document.addEventListener('keyup', el._keyupCallback);
   },

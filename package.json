@@ -1,20 +1,21 @@
 {
-  "name": "vue-numeric-keypad",
-  "version": "0.1.0",
-  "private": true,
+  "name": "getjv-num-pad",
+  "version": "0.1.1",
+  "main": "./dist/getjvNumPad.common.js",
+  "description": "A simple and responsible numeric pad that uses clicks and number keys",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name getjvNumPad src/index.js",
+    "build:stats": "vue-cli-service build --target lib --name getjvNumPad src/index.js --report-json",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "dinero.js": "^1.9.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@types/dinero.js": "^1.9.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
@@ -35,5 +36,9 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "~4.1.5",
     "vue-jest": "^5.0.0-0"
-  }
+  },
+  "files": [
+    "dist/*",
+    "src/index.css"
+  ]
 }

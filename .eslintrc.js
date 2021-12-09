@@ -11,6 +11,9 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'object-curly-newline': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'arrow-parens': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'implicit-arrow-linebreak': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'function-paren-newline': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
   overrides: [
     {
